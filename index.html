@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafik dan Tabel Penjualan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Laporan Penjualan Mingguan</h1>
+    <canvas id="salesChart" width="400" height="200"></canvas>
+    <table id="salesTable">
+      <thead>
+        <tr>
+          <th>Hari</th>
+          <th>Produk Terjual</th>
+          <th>Pendapatan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data akan diisi oleh JavaScript -->
+      </tbody>
+    </table>
+    <button id="generate-pdf">Unduh PDF</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
